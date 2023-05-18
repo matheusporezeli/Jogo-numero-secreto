@@ -2,10 +2,22 @@ function verificaChuteValorValido (chute){
     const numero = +chute //Transforma o número que eu falei de string em número inteiro
 
     if (chuteForInvalido(numero)) {
-       elementoChute.innerHTML += 
-       '<div>Valor Invalido</div>'
-       return //Para essa função
+        if (chute.toUpperCase() === "GAME OVER") {
+
+            document.body.innerHTML =
+                `
+                <h2>Game Over!!!</h2>
+                <h3>Pressione o botão para jogar novamente</h3>
+                <button id="jogar-novamente" class="btn-jogar" >Jogar novamente</button>
+                `
+                document.body.style.backgroundColor = "black";
+        } else {
+
+            elementoChute.innerHTML += '<div>Valor Inválido</div>';
+        }
+        return
     }
+
 
     if (numeroForMaiorOuMenor(numero)){
         elementoChute.innerHTML += 
