@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root{
+    --font-family: 'Kanit', sans-serif;
+    --bg-color: #0C134F;
+    --primary-color: #D4ADFC;
+}
+
+body{
+     background: var(--bg-color);
+     color: var(--primary-color);
+     font-family: var(--font-family);
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     margin: 0;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 4em;
+}
+
+h3{
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box{
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+}
+
+.btn-jogar{
+    font-size: 1em;
+    padding: 8px 15px;
+    border: 0;
+    background: var(--primary-color);
+    border-radius:  15px;
+    margin-top: 20px;
+}
